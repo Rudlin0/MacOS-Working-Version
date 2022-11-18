@@ -82,4 +82,10 @@
     <Import Project="$(NuGetPackageRoot)xamarin.android.glide.annotations/4.12.0.8/buildTransitive/net6.0-android31.0/Xamarin.Android.Glide.Annotations.targets" Condition="Exists('$(NuGetPackageRoot)xamarin.android.glide.annotations/4.12.0.8/buildTransitive/net6.0-android31.0/Xamarin.Android.Glide.Annotations.targets')" />
     <Import Project="$(NuGetPackageRoot)xamarin.android.glide/4.12.0.8/buildTransitive/net6.0-android31.0/Xamarin.Android.Glide.targets" Condition="Exists('$(NuGetPackageRoot)xamarin.android.glide/4.12.0.8/buildTransitive/net6.0-android31.0/Xamarin.Android.Glide.targets')" />
   </ImportGroup>
+  <ImportGroup Condition=" '$(TargetFramework)' == 'net7.0-ios16.0' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)microsoft.extensions.logging.abstractions/7.0.0/buildTransitive/net6.0/Microsoft.Extensions.Logging.Abstractions.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.extensions.logging.abstractions/7.0.0/buildTransitive/net6.0/Microsoft.Extensions.Logging.Abstractions.targets')" />
+  </ImportGroup>
+  <ImportGroup Condition=" '$(TargetFramework)' == 'net7.0-maccatalyst15.4' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)microsoft.extensions.logging.abstractions/7.0.0/buildTransitive/net6.0/Microsoft.Extensions.Logging.Abstractions.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.extensions.logging.abstractions/7.0.0/buildTransitive/net6.0/Microsoft.Extensions.Logging.Abstractions.targets')" />
+  </ImportGroup>
 </Project>

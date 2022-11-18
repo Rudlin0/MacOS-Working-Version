@@ -10,11 +10,7 @@
 		</data>
 		<key>Resources/Assets.car</key>
 		<data>
-		lYBAxr/WbifOxPJp6UNNw97SMps=
-		</data>
-		<key>Resources/MauiInfo.plist</key>
-		<data>
-		iEtuUGCV6JM3gxS/pO33swhmpp8=
+		HbiYp+b4nTFI9QE+vIFJIE/q3Uo=
 		</data>
 		<key>Resources/MonoTouchDebugConfiguration.txt</key>
 		<data>
@@ -43,6 +39,14 @@
 		<key>Resources/dotnet_bot@3x.png</key>
 		<data>
 		q9YkYdXEtTarjODSzZazJNqUnN4=
+		</data>
+		<key>Resources/polystichum_munitum_jami_dwyer.jpg</key>
+		<data>
+		m4vLLjKnAma1joIdJzsYMWkyfQA=
+		</data>
+		<key>Resources/uwo_placeholder.jpg</key>
+		<data>
+		MvPFQ80x+rlYJYQrAe7THjQTRJg=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -1318,7 +1322,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0BT3MYv3VQCpNq1fpzvwmfZGqYHN9BAGvNkSCB7JHh8=
+			OiGtOLKa5LWpfaydiGdYt+N20jDAdXlTR03gpMcllis=
 			</data>
 		</dict>
 		<key>MonoBundle/UWOsh_InteractiveMap.pdb</key>
@@ -1416,14 +1420,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			u5BmlqCgeL1uwI301RNImXUvfr++aNsw3NIIMs0cFfg=
-			</data>
-		</dict>
-		<key>Resources/MauiInfo.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			tx0KXqEC+DvcCGyogQTEQWHcCWJYYqH24NtPwhpQEjo=
+			IdlmAhpYNrCVn6AHA3KJ+kWAm6CQnQ1703EDY3Gzh9A=
 			</data>
 		</dict>
 		<key>Resources/MonoTouchDebugConfiguration.txt</key>
@@ -1473,6 +1470,20 @@
 			<key>hash2</key>
 			<data>
 			vjYg7v38aCvp3YfVnOekZFebcitnM5IsjyinFJGMvWI=
+			</data>
+		</dict>
+		<key>Resources/polystichum_munitum_jami_dwyer.jpg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			gvFsSTJEf8YVfUsGNpErjom2rVIMSLdI71UW2i6QrNU=
+			</data>
+		</dict>
+		<key>Resources/uwo_placeholder.jpg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			cmECILwRH5tBUqEKvidNkadCkcZc/UpEZ1fJNSEdJIM=
 			</data>
 		</dict>
 	</dict>

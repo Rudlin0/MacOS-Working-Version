@@ -47,7 +47,8 @@
                 Grid.Row="1"
                 Grid.ColumnSpan="2"
                 HorizontalOptions="CenterAndExpand"
-                VerticalOptions="CenterAndExpand"/>
+                VerticalOptions="CenterAndExpand"
+                Scale="0.5"/>
 
 
         </Grid>
