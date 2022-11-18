@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="UWOsh_InteractiveMap.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:UWOsh_InteractiveMap"
+    Shell.FlyoutBehavior="Flyout">
+
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+
+
+    <ShellContent
+        Title="ListAllPlants"
+        ContentTemplate="{DataTemplate local:ListAllPlants}"
+        Route="ListAllPlants" />
+
+
+    <ShellContent
+        Title="SearchHistory"
+        ContentTemplate="{DataTemplate local:SearchHistory}"
+        Route="SearchHistory" />
+
+
+    <ShellContent
+        Title="NavBar"
+        ContentTemplate="{DataTemplate local:NavBar}"
+        Route="NavBar" />
+
+    <ShellContent
+        Title="DetailPage"
+        ContentTemplate="{DataTemplate local:DetailPage}"
+        Route="DetailPage" />
+
+    <ShellContent
+        Title="Compass"
+        ContentTemplate="{DataTemplate local:Compass}"
+        Route="Compass" />
+
+
+
+
+</Shell>
