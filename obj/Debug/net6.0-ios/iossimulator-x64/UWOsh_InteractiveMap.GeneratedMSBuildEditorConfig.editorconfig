@@ -8,63 +8,63 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DummyProject
-build_property.ProjectDir = /Users/Rudy/Desktop/DummyProject/
+build_property.ProjectDir = /Users/Rudy/Downloads/MacOS-Version-Team-2-Project-CS341-main/
 
-[/Users/Rudy/Desktop/DummyProject/App.xaml]
+[/Users/Rudy/Downloads/MacOS-Version-Team-2-Project-CS341-main/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = DummyProject.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[/Users/Rudy/Desktop/DummyProject/AppShell.xaml]
+[/Users/Rudy/Downloads/MacOS-Version-Team-2-Project-CS341-main/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = DummyProject.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[/Users/Rudy/Desktop/DummyProject/Compass.xaml]
+[/Users/Rudy/Downloads/MacOS-Version-Team-2-Project-CS341-main/Compass.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = DummyProject.Compass.xaml
 build_metadata.AdditionalFiles.TargetPath = Compass.xaml
 build_metadata.AdditionalFiles.RelativePath = Compass.xaml
 
-[/Users/Rudy/Desktop/DummyProject/DetailPage.xaml]
+[/Users/Rudy/Downloads/MacOS-Version-Team-2-Project-CS341-main/DetailPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = DummyProject.DetailPage.xaml
 build_metadata.AdditionalFiles.TargetPath = DetailPage.xaml
 build_metadata.AdditionalFiles.RelativePath = DetailPage.xaml
 
-[/Users/Rudy/Desktop/DummyProject/ListAllPlants.xaml]
+[/Users/Rudy/Downloads/MacOS-Version-Team-2-Project-CS341-main/ListAllPlants.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = DummyProject.ListAllPlants.xaml
 build_metadata.AdditionalFiles.TargetPath = ListAllPlants.xaml
 build_metadata.AdditionalFiles.RelativePath = ListAllPlants.xaml
 
-[/Users/Rudy/Desktop/DummyProject/MainPage.xaml]
+[/Users/Rudy/Downloads/MacOS-Version-Team-2-Project-CS341-main/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = DummyProject.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[/Users/Rudy/Desktop/DummyProject/NavBar.xaml]
+[/Users/Rudy/Downloads/MacOS-Version-Team-2-Project-CS341-main/NavBar.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = DummyProject.NavBar.xaml
 build_metadata.AdditionalFiles.TargetPath = NavBar.xaml
 build_metadata.AdditionalFiles.RelativePath = NavBar.xaml
 
-[/Users/Rudy/Desktop/DummyProject/Resources/Styles/Colors.xaml]
+[/Users/Rudy/Downloads/MacOS-Version-Team-2-Project-CS341-main/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = DummyProject.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Colors.xaml
 
-[/Users/Rudy/Desktop/DummyProject/Resources/Styles/Styles.xaml]
+[/Users/Rudy/Downloads/MacOS-Version-Team-2-Project-CS341-main/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = DummyProject.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Styles.xaml
 
-[/Users/Rudy/Desktop/DummyProject/SearchHistory.xaml]
+[/Users/Rudy/Downloads/MacOS-Version-Team-2-Project-CS341-main/SearchHistory.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = DummyProject.SearchHistory.xaml
 build_metadata.AdditionalFiles.TargetPath = SearchHistory.xaml

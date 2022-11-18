@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/Rudy/Desktop/DummyProject/UWOsh_InteractiveMap.csproj": {}
+    "/Users/Rudy/Downloads/MacOS-Version-Team-2-Project-CS341-main/UWOsh_InteractiveMap.csproj": {}
   },
   "projects": {
-    "/Users/Rudy/Desktop/DummyProject/UWOsh_InteractiveMap.csproj": {
+    "/Users/Rudy/Downloads/MacOS-Version-Team-2-Project-CS341-main/UWOsh_InteractiveMap.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/Rudy/Desktop/DummyProject/UWOsh_InteractiveMap.csproj",
+        "projectUniqueName": "/Users/Rudy/Downloads/MacOS-Version-Team-2-Project-CS341-main/UWOsh_InteractiveMap.csproj",
         "projectName": "UWOsh_InteractiveMap",
-        "projectPath": "/Users/Rudy/Desktop/DummyProject/UWOsh_InteractiveMap.csproj",
+        "projectPath": "/Users/Rudy/Downloads/MacOS-Version-Team-2-Project-CS341-main/UWOsh_InteractiveMap.csproj",
         "packagesPath": "/Users/Rudy/.nuget/packages/",
-        "outputPath": "/Users/Rudy/Desktop/DummyProject/obj/",
+        "outputPath": "/Users/Rudy/Downloads/MacOS-Version-Team-2-Project-CS341-main/obj/",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "configFilePaths": [

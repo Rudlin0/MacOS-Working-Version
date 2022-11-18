@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VyvrsHlFlcTza8JsJFI+OtgF8xuiyR1UOCmssO6XFqZJo6JkitrL01Yqrm4kwPgpZoCQ+1I9F2ZeH1I+lROBew==",
+  "dgSpecHash": "uaOCLErJu38z65ZkDC7vfyWGGaxXMDXPZQTGlMtlcWYtOXnD8usDI3bqNJHn4t9eiWEzo9iGhFXB3PUu2pEjeQ==",
   "success": true,
-  "projectFilePath": "/Users/Rudy/Desktop/DummyProject/UWOsh_InteractiveMap.csproj",
+  "projectFilePath": "/Users/Rudy/Downloads/MacOS-Version-Team-2-Project-CS341-main/UWOsh_InteractiveMap.csproj",
   "expectedPackageFiles": [
     "/Users/Rudy/.nuget/packages/googlegson/2.9.0.1/googlegson.2.9.0.1.nupkg.sha512",
     "/Users/Rudy/.nuget/packages/microsoft.extensions.configuration/6.0.1/microsoft.extensions.configuration.6.0.1.nupkg.sha512",
