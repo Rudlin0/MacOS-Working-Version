@@ -2,7 +2,7 @@
 using Microsoft.Maui;
 using Microsoft.Maui.Hosting;
 
-namespace DummyProject;
+namespace UWOsh_InteractiveMap;
 
 class Program : MauiApplication
 {

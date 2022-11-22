@@ -1,44 +1,46 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>net6.0-android;net7.0-ios16.0;net7.0-maccatalyst15.4</TargetFrameworks>
-		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net6.0-windows10.0.19041.0</TargetFrameworks>
+		<TargetFrameworks>net7.0-android;net7.0-ios;net7.0-maccatalyst</TargetFrameworks>
+		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net7.0-windows10.0.19041.0</TargetFrameworks>
 		<!-- Uncomment to also build the tizen app. You will need to install tizen by following this: https://github.com/Samsung/Tizen.NET -->
-		<!-- <TargetFrameworks>$(TargetFrameworks);net6.0-tizen</TargetFrameworks> -->
+		<!-- <TargetFrameworks>$(TargetFrameworks);net7.0-tizen</TargetFrameworks> -->
 		<OutputType>Exe</OutputType>
-		<RootNamespace>DummyProject</RootNamespace>
+		<RootNamespace>UWOsh_InteractiveMap</RootNamespace>
 		<UseMaui>true</UseMaui>
 		<SingleProject>true</SingleProject>
 		<ImplicitUsings>enable</ImplicitUsings>
 
 		<!-- Display name -->
-		<ApplicationTitle>DummyProject</ApplicationTitle>
+		<ApplicationTitle>UWOsh_InteractiveMap</ApplicationTitle>
 
 		<!-- App Identifier -->
-		<ApplicationId>com.companyname.dummyproject</ApplicationId>
-		<ApplicationIdGuid>acaa027d-816d-49e5-b39d-ee5c9ecbe637</ApplicationIdGuid>
+		<ApplicationId>com.companyname.uwosh_interactivemap</ApplicationId>
+		<ApplicationIdGuid>e7ede2b5-098f-497f-ada8-795a918d076d</ApplicationIdGuid>
 
 		<!-- Versions -->
 		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
 		<ApplicationVersion>1</ApplicationVersion>
 
-		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">14.2</SupportedOSPlatformVersion>
-		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">14.0</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">11.0</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">13.1</SupportedOSPlatformVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
 		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
 	</PropertyGroup>
 
-	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net6.0-ios|AnyCPU'">
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-ios|AnyCPU'">
 	  <CreatePackage>false</CreatePackage>
 	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net6.0-ios|AnyCPU'">
-	  <CreatePackage>false</CreatePackage>
-	</PropertyGroup>
-	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-	  <WarningLevel>4</WarningLevel>
-	</PropertyGroup>
+	<ItemGroup>
+	  <MauiImage Remove="Resources\Images\uwo_placeholder.jpg" />
+	  <MauiImage Remove="Resources\Images\polystichum_munitum_jami_dwyer.jpg" />
+	  <MauiImage Remove="Resources\Images\uwo_placeholder.jpg" />
+	  <MauiImage Remove="Resources\Images\polystichum_munitum_jami_dwyer.jpg" />
+	  <MauiImage Remove="Resources\Images\uwo_placeholder.jpg" />
+	  <MauiImage Remove="Resources\Images\polystichum_munitum_jami_dwyer.jpg" />
+	</ItemGroup>
 	<ItemGroup>
 		<!-- App Icon -->
 		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
@@ -55,39 +57,46 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="App.xaml">
-	    <SubType></SubType>
-	  </MauiXaml>
-	  <MauiXaml Update="AppShell.xaml">
-	    <SubType></SubType>
-	  </MauiXaml>
-	  <MauiXaml Update="Compass.xaml">
-	    <SubType></SubType>
-	  </MauiXaml>
-	  <MauiXaml Update="DetailPage.xaml">
-	    <SubType></SubType>
-	  </MauiXaml>
-	  <MauiXaml Update="ListAllPlants.xaml">
-	    <SubType></SubType>
-	  </MauiXaml>
-	  <MauiXaml Update="MainPage.xaml">
+		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
+		<PackageReference Include="Syncfusion.Maui.Core" Version="20.3.57" />
+		<PackageReference Include="Syncfusion.Maui.Gauges" Version="20.3.57" />
+		<PackageReference Include="Syncfusion.Licensing" Version="20.3.0.58" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="SearchHistory.xaml">
 	    <SubType></SubType>
 	  </MauiXaml>
 	  <MauiXaml Update="NavBar.xaml">
 	    <SubType></SubType>
 	  </MauiXaml>
-	  <MauiXaml Update="SearchHistory.xaml">
+	  <MauiXaml Update="ListAllPlants.xaml">
+	    <SubType></SubType>
+	  </MauiXaml>
+	  <MauiXaml Update="DetailPage.xaml">
+	    <SubType></SubType>
+	  </MauiXaml>
+	  <MauiXaml Update="Compass.xaml">
 	    <SubType></SubType>
 	  </MauiXaml>
 	</ItemGroup>
 	<ItemGroup>
-	  <None Remove="Syncfusion.Licensing" />
+	  <None Remove="Resources\Images\uwo_placeholder.jpg" />
+	  <None Remove="Resources\Images\polystichum_munitum_jami_dwyer.jpg" />
 	  <None Remove="Syncfusion.Maui.Core" />
+	  <None Remove="Resources\.DS_Store" />
 	  <None Remove="Syncfusion.Maui.Gauges" />
+	  <None Remove="Syncfusion.Licensing" />
 	</ItemGroup>
 	<ItemGroup>
-	  <PackageReference Include="Syncfusion.Licensing" Version="20.3.0.57" />
-	  <PackageReference Include="Syncfusion.Maui.Core" Version="20.3.57" />
-	  <PackageReference Include="Syncfusion.Maui.Gauges" Version="20.3.57" />
+	  <BundleResource Include="Resources\Images\uwo_placeholder.jpg" />
+	  <BundleResource Include="Resources\Images\uwo_placeholder.jpg" />
+	  <BundleResource Include="Resources\Images\polystichum_munitum_jami_dwyer.jpg" />
+	  <BundleResource Include="Resources\Images\polystichum_munitum_jami_dwyer.jpg" />
+	  <BundleResource Include="Resources\.DS_Store" />
+	  <BundleResource Include="Resources\Images\uwo_placeholder.jpg" />
+	  <BundleResource Include="Resources\Images\polystichum_munitum_jami_dwyer.jpg" />
+	  <BundleResource Include="Resources\Images\uwo_placeholder.jpg" />
+	  <BundleResource Include="Resources\Images\polystichum_munitum_jami_dwyer.jpg" />
 	</ItemGroup>
 </Project>
