@@ -61,6 +61,8 @@
 		<PackageReference Include="Syncfusion.Maui.Core" Version="20.3.57" />
 		<PackageReference Include="Syncfusion.Maui.Gauges" Version="20.3.57" />
 		<PackageReference Include="Syncfusion.Licensing" Version="20.3.0.58" />
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.0.0" />
+		<PackageReference Include="Npgsql" Version="7.0.0" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -87,6 +89,8 @@
 	  <None Remove="Resources\.DS_Store" />
 	  <None Remove="Syncfusion.Maui.Gauges" />
 	  <None Remove="Syncfusion.Licensing" />
+	  <None Remove="CommunityToolkit.Mvvm" />
+	  <None Remove="Npgsql" />
 	</ItemGroup>
 	<ItemGroup>
 	  <BundleResource Include="Resources\Images\uwo_placeholder.jpg" />

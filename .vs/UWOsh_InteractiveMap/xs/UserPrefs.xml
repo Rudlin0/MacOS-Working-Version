@@ -1,38 +1,31 @@
-﻿<Properties StartupConfiguration="{D6ED57C4-B5A6-4F52-8C34-9B463C4DE1C3}|Default">
-  <MonoDevelop.Ide.ItemProperties.UWOsh__InteractiveMap PreferredExecutionTarget="MyAppleMacCatalystID" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="DetailPage.xaml">
+﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{B0C046DB-23CB-411B-8A40-3C3CAD6C6DF6}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="RelationalDatabase.cs">
     <Files>
-      <File FileName="Platforms/MacCatalyst/Program.cs" />
-      <File FileName="Platforms/MacCatalyst/AppDelegate.cs" />
-      <File FileName="Platforms/MacCatalyst/Info.plist" />
-      <File FileName="DetailPage.xaml" Line="30" Column="13" />
-      <File FileName="DetailPage.xaml.cs" />
-      <File FileName="MainPage.xaml" Line="35" Column="30" />
+      <File FileName="MainPage.xaml.cs" />
+      <File FileName="ListAllPlants.xaml" />
+      <File FileName="RelationalDatabase.cs" Line="101" Column="32" />
+      <File FileName="IDatabase.cs" Line="3" Column="1" />
+      <File FileName="Entry.cs" Line="42" Column="10" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="UWOsh_InteractiveMap" expanded="True">
             <Node name="UWOsh_InteractiveMap" expanded="True">
-              <Node name="Platforms" expanded="True">
-                <Node name="MacCatalyst" expanded="True" />
-              </Node>
-              <Node name="Resources" expanded="True">
-                <Node name="Images" expanded="True" />
-              </Node>
-              <Node name="App.xaml" expanded="True" />
-              <Node name="DetailPage.xaml" expanded="True" />
+              <Node name="Dependencies" expanded="True" />
+              <Node name="MainPage.xaml" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.UWOsh__InteractiveMap PreferredExecutionTarget="MyAppleMacCatalystID" />
 </Properties>
