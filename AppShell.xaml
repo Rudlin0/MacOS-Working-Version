@@ -24,10 +24,10 @@
         Route="SearchHistory" />
 
 
-    <ShellContent
+    <!-- ShellContent
         Title="NavBar"
         ContentTemplate="{DataTemplate local:NavBar}"
-        Route="NavBar" />
+        Route="NavBar" /-->
 
     <ShellContent
         Title="DetailPage"
