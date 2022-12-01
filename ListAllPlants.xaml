@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="UWOsh_InteractiveMap.ListAllPlants"
              Title="ListAllPlants">
-
+    <!-- Written by Rudy Liljeberg -->
     <VerticalStackLayout BackgroundColor="White">
         <Grid>
             <Grid.RowDefinitions>

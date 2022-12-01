@@ -1,4 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- Worked on by John Hudson-->
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="UWOsh_InteractiveMap.DetailPage"
@@ -24,7 +25,6 @@
             HorizontalOptions="Start"
             Style="{StaticResource PlainTextStyle}"/>
 
-        <!-- Will display images horizontally, may need to mess with padding/margins-->
         <HorizontalStackLayout>
             <Image 
                 Source="polystichum_munitum_jami_dwyer.jpg"

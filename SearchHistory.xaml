@@ -1,8 +1,10 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="UWOsh_InteractiveMap.SearchHistory"
               Title="SearchHistory">
+
+    <!-- Written by Rudy Liljeberg -->
 
     <VerticalStackLayout BackgroundColor="White">
         <Grid>
@@ -12,6 +14,7 @@
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1.5*" />
+                <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="0.25*" />
             </Grid.ColumnDefinitions>
 
@@ -20,45 +23,38 @@
                BackgroundColor="White"
                VerticalOptions="Start"
                HorizontalOptions="Start"
-               TextColor="Black"/>
+               TextColor="Black"
+               TextChanged="OnFilterTextChanged"
+               x:Name="ListSearchBar"/>
+
+            <Button Grid.Column="1"
+                x:Name="FilterBtn"
+                Text="Filter"
+                SemanticProperties.Hint="Opens pop-up filter menu"
+                Clicked="OnButtonClicked"
+                HorizontalOptions="Center"
+                VerticalOptions="Start"
+                BorderColor="Black"
+                BorderWidth="4"
+                FontSize="Medium"
+                Scale="1"/>
 
         </Grid>
 
         <Label 
-            Text="Search History"
+            Text="Your Search History"
             VerticalOptions="Center" 
             HorizontalOptions="Start"
             TextColor="Black"
             FontSize="Title"/>
 
-        <Button
-                x:Name="SearchBtn1"
-                Text="Common Name (Genus Species)"
-                SemanticProperties.Hint="Sends you to this item's detail page"
-                Clicked="OnButtonClicked"
-                HorizontalOptions="Start"
-                VerticalOptions="Center"
-                FontSize="Large"
-                />
-
-        <Button
-                x:Name="SearchBtn2"
-                Text="Common Name (Genus Species)"
-                SemanticProperties.Hint="Sends you to this item's detail page"
-                Clicked="OnButtonClicked"
-                HorizontalOptions="Start"
-                VerticalOptions="Center"
-                FontSize="Large"
-                />
-
-        <Button
-                x:Name="SearchBtn3"
-                Text="Common Name (Genus Species)"
-                SemanticProperties.Hint="Sends you to this item's detail page"
-                Clicked="OnButtonClicked"
-                HorizontalOptions="Start"
-                VerticalOptions="Center"
-                FontSize="Large"
-                />
+        <ListView x:Name="UserSearchHistory" ItemSelected="OnItemTapped">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding PopularName}"
+                              Detail="{Binding ScientificName}"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+         </ListView>
     </VerticalStackLayout>
 </ContentPage>

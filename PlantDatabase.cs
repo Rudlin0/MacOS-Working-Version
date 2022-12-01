@@ -11,6 +11,7 @@ using System.Runtime.CompilerServices;
 // https://www.dotnetperls.com/serialize-list
 // https://www.daveoncsharp.com/2009/07/xml-serialization-of-collections/
 
+// Written by Rudy Liljeberg
 
 namespace UWOsh_InteractiveMap
 {

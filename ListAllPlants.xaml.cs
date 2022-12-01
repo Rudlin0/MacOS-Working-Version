@@ -1,14 +1,18 @@
+//using Android.App;
+//using Android.App.AppSearch;
+
 namespace UWOsh_InteractiveMap;
+
+//Written by Rudy Liljeberg
 
 public partial class ListAllPlants : ContentPage
 {
-	public ListAllPlants()
+    PlantDatabase plantDatabase;
+    public ListAllPlants()
 	{
 		InitializeComponent();
 
-        //BindingContext = new PlantDatabase();
-
-        PlantDatabase plantDatabase = new PlantDatabase();
+        plantDatabase = new PlantDatabase();
         ListOfAllPlants.ItemsSource = plantDatabase.GetPlants();
         Routing.RegisterRoute(nameof(DetailPage), typeof(DetailPage));
 
@@ -17,7 +21,7 @@ public partial class ListAllPlants : ContentPage
     {
         await Shell.Current.GoToAsync("DetailPage");
     }
-
+        
     private void OnButtonClicked(object sender, EventArgs e)
     {
         Console.Write("Goodbye!");
@@ -25,6 +29,6 @@ public partial class ListAllPlants : ContentPage
 
     private void OnFilterTextChanged(object sender, TextChangedEventArgs e)
     {
-
+        
     }
 }

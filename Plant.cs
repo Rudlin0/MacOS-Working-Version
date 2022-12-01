@@ -3,6 +3,8 @@ using CommunityToolkit.Mvvm.ComponentModel;
 
 namespace UWOsh_InteractiveMap
 {
+    // Written by Rudy Liljeberg
+
     public class Plant : ObservableObject
     {
 

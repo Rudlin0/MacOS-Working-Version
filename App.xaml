@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:UWOsh_InteractiveMap"
              x:Class="UWOsh_InteractiveMap.App">
+    <!-- Resources and Styling worked on by John-->
     <Application.Resources>
           <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
