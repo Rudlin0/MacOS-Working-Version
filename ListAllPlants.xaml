@@ -4,6 +4,7 @@
              x:Class="UWOsh_InteractiveMap.ListAllPlants"
              Title="ListAllPlants">
     <!-- Written by Rudy Liljeberg -->
+    <!-- Reviewed by Shabbar Kazmi -->
     <VerticalStackLayout BackgroundColor="White">
         <Grid>
             <Grid.RowDefinitions>

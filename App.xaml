@@ -4,6 +4,7 @@
              xmlns:local="clr-namespace:UWOsh_InteractiveMap"
              x:Class="UWOsh_InteractiveMap.App">
     <!-- Resources and Styling worked on by John-->
+    <!-- All project code review done by Rudy Liljeberg unless explicitly noted otherwise -->
     <Application.Resources>
           <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>

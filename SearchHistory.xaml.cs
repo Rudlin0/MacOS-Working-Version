@@ -1,7 +1,7 @@
 namespace UWOsh_InteractiveMap;
 
 //Written by Rudy Liljeberg
-
+// Reviewed by Shabbar Kazmi
 public partial class SearchHistory : ContentPage
 {
     PlantDatabase plantDatabase;

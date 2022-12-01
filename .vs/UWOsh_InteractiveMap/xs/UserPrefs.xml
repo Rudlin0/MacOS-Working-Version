@@ -1,31 +1,38 @@
 ﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{B0C046DB-23CB-411B-8A40-3C3CAD6C6DF6}|Default">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.UWOsh__InteractiveMap PreferredExecutionTarget="MyAppleMacCatalystID" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ListAllPlants.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="AppShell.xaml">
     <Files>
-      <File FileName="MainPage.xaml.cs" Line="6" Column="1" />
-      <File FileName="ListAllPlants.xaml" Line="25" Column="30" />
-      <File FileName="IDatabase.cs" />
-      <File FileName="ListAllPlants.xaml.cs" Line="33" Column="60" />
-      <File FileName="MainPage.xaml" Line="57" Column="1" />
-      <File FileName="LocationFeaturescs.cs" />
-      <File FileName="Platforms/MacCatalyst/Program.cs" />
-      <File FileName="PlantDatabase.cs" />
-      <File FileName="Plant.cs" />
-      <File FileName="DetailPage.xaml" />
+      <File FileName="MainPage.xaml.cs" />
+      <File FileName="ListAllPlants.xaml" Line="57" Column="27" />
+      <File FileName="IDatabase.cs" Line="7" Column="33" />
+      <File FileName="ListAllPlants.xaml.cs" Line="33" Column="6" />
+      <File FileName="MainPage.xaml" />
+      <File FileName="LocationFeaturescs.cs" Line="1" Column="1" />
+      <File FileName="Platforms/MacCatalyst/Program.cs" Line="13" Column="1" />
+      <File FileName="PlantDatabase.cs" Line="14" Column="1" />
+      <File FileName="Plant.cs" Line="7" Column="1" />
+      <File FileName="DetailPage.xaml" Line="2" Column="33" />
       <File FileName="Platforms/MacCatalyst/AppDelegate.cs" />
       <File FileName="Platforms/MacCatalyst/Info.plist" />
-      <File FileName="App.xaml" Line="17" Column="38" />
-      <File FileName="MauiProgram.cs" />
-      <File FileName="NavBar.xaml" />
+      <File FileName="App.xaml" Line="10" Column="11" />
+      <File FileName="MauiProgram.cs" Line="1" Column="1" />
+      <File FileName="NavBar.xaml" Line="1" Column="1" />
       <File FileName="App.xaml.cs" Line="10" Column="14" />
-      <File FileName="AppShell.xaml" Line="17" Column="52" />
-      <File FileName="AppShell.xaml.cs" Line="7" Column="13" />
+      <File FileName="AppShell.xaml" Line="24" Column="33" />
+      <File FileName="AppShell.xaml.cs" Line="10" Column="47" />
       <File FileName="Platforms/Android/AndroidManifest.xml" />
-      <File FileName="Platforms/Android/MainActivity.cs" Line="1" Column="1" />
+      <File FileName="Platforms/Android/MainActivity.cs" />
       <File FileName="Platforms/Android/MainApplication.cs" />
       <File FileName="MapUwosh.xaml" Line="57" Column="1" />
       <File FileName="MapUwosh.xaml.cs" Line="14" Column="1" />
+      <File FileName="SearchHistory.xaml" Line="51" Column="31" />
+      <File FileName="SearchHistory.xaml.cs" Line="13" Column="13" />
+      <File FileName="Compass.xaml.cs" Line="14" Column="90" />
+      <File FileName="Compass.xaml" Line="3" Column="15" />
+      <File FileName="NavBar.xaml.cs" Line="22" Column="59" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -35,17 +42,19 @@
               <Node name="Dependencies" expanded="True" />
               <Node name="Platforms" expanded="True">
                 <Node name="Android" expanded="True" />
+                <Node name="MacCatalyst" expanded="True" />
               </Node>
               <Node name="Resources" expanded="True">
                 <Node name="Images" expanded="True" />
               </Node>
               <Node name="App.xaml" expanded="True" />
               <Node name="AppShell.xaml" expanded="True" />
-              <Node name="ListAllPlants.xaml" expanded="True">
-                <Node name="ListAllPlants.xaml.cs" selected="True" />
-              </Node>
+              <Node name="Compass.xaml" expanded="True" />
+              <Node name="ListAllPlants.xaml" expanded="True" />
               <Node name="MainPage.xaml" expanded="True" />
               <Node name="MapUwosh.xaml" expanded="True" />
+              <Node name="NavBar.xaml" expanded="True" />
+              <Node name="SearchHistory.xaml" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -53,9 +62,7 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
 </Properties>

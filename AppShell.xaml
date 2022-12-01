@@ -23,12 +23,6 @@
         ContentTemplate="{DataTemplate local:SearchHistory}"
         Route="SearchHistory" />
 
-
-    <!-- ShellContent
-        Title="NavBar"
-        ContentTemplate="{DataTemplate local:NavBar}"
-        Route="NavBar" /-->
-
     <ShellContent
         Title="DetailPage"
         ContentTemplate="{DataTemplate local:DetailPage}"

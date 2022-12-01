@@ -5,6 +5,7 @@
               Title="SearchHistory">
 
     <!-- Written by Rudy Liljeberg -->
+    <!-- Reviewed by Shabbar Kazmi -->
 
     <VerticalStackLayout BackgroundColor="White">
         <Grid>

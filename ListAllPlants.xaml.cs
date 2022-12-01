@@ -3,8 +3,8 @@
 
 namespace UWOsh_InteractiveMap;
 
-//Written by Rudy Liljeberg
-
+// Written by Rudy Liljeberg
+// Reviewed by Shabbar Kazmi
 public partial class ListAllPlants : ContentPage
 {
     PlantDatabase plantDatabase;
