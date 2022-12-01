@@ -14,6 +14,9 @@ namespace UWOsh_InteractiveMap
         String imageurl;
         long id;
 
+        Location location;
+
+
         public String PopularName
         {
             get { return popularname; }
@@ -44,6 +47,12 @@ namespace UWOsh_InteractiveMap
             get { return id; }
         }
 
+        public Location Plantloc
+        {
+            get { return location; }
+        }
+
+
         public Plant(long id, String popularname, String scientificname, String description,
                      String coordinates, String imageurl)
         {
@@ -53,6 +62,10 @@ namespace UWOsh_InteractiveMap
             this.coordinates = coordinates;
             this.imageurl = imageurl;
             this.id = id;
+
+            string[] longlat = coordinates.Split(",");
+            location = new Location(Double.Parse(longlat[0]),Double.Parse(longlat[1]));
+
         }
 
     }

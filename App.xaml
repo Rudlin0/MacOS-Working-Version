@@ -4,11 +4,35 @@
              xmlns:local="clr-namespace:UWOsh_InteractiveMap"
              x:Class="UWOsh_InteractiveMap.App">
     <Application.Resources>
-        <ResourceDictionary>
+          <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
+
+        <Application.MainPage>
+        <Shell>
+            <TabBar x:Name="AppTabs">
+                
+                <Tab Title="MapTab" Icon="mapicon.svg">
+                    <ShellContent ContentTemplate="{DataTemplate local:MapUwosh}"/>
+                </Tab>
+                <Tab Title="CompassTab" Icon="compassicon.svg">
+                    <ShellContent ContentTemplate="{DataTemplate local:Compass}"/>
+                </Tab>
+
+                <Tab Title="ListAllPlantsTab" Icon="plantslist.svg">
+                    <ShellContent ContentTemplate="{DataTemplate local:ListAllPlants}"/>
+                </Tab>
+
+                <Tab Title="DetailPage" Icon="detailpage.svg">
+                    <ShellContent ContentTemplate="{DataTemplate local:DetailPage}"/>
+                </Tab>
+            </TabBar>
+        </Shell>
+    </Application.MainPage>
+
+      
 </Application>

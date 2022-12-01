@@ -1,32 +1,55 @@
 ﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{B0C046DB-23CB-411B-8A40-3C3CAD6C6DF6}|Default">
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.UWOsh__InteractiveMap PreferredExecutionTarget="MyAppleMacCatalystID" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ListAllPlants.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Platforms/Android/AndroidManifest.xml">
     <Files>
-      <File FileName="MainPage.xaml.cs" Line="1" Column="1" />
-      <File FileName="ListAllPlants.xaml" Line="63" Column="42" />
+      <File FileName="MainPage.xaml.cs" Line="9" Column="10" />
+      <File FileName="ListAllPlants.xaml" Line="25" Column="31" />
       <File FileName="IDatabase.cs" />
-      <File FileName="ListAllPlants.xaml.cs" Line="17" Column="1" />
-      <File FileName="MainPage.xaml" Line="1" Column="1" />
-      <File FileName="LocationFeaturescs.cs" Line="1" Column="1" />
-      <File FileName="Platforms/MacCatalyst/Program.cs" Line="10" Column="1" />
-      <File FileName="PlantDatabase.cs" Line="75" Column="45" />
-      <File FileName="Plant.cs" Line="1" Column="1" />
-      <File FileName="DetailPage.xaml" Line="1" Column="1" />
+      <File FileName="ListAllPlants.xaml.cs" Line="18" Column="9" />
+      <File FileName="MainPage.xaml" Line="5" Column="1" />
+      <File FileName="LocationFeaturescs.cs" />
+      <File FileName="Platforms/MacCatalyst/Program.cs" Line="13" Column="1" />
+      <File FileName="PlantDatabase.cs" />
+      <File FileName="Plant.cs" Line="59" Column="43" />
+      <File FileName="DetailPage.xaml" />
+      <File FileName="Platforms/MacCatalyst/AppDelegate.cs" />
+      <File FileName="Platforms/MacCatalyst/Info.plist" />
+      <File FileName="App.xaml" Line="15" Column="31" />
+      <File FileName="MauiProgram.cs" Line="18" Column="1" />
+      <File FileName="NavBar.xaml" Line="1" Column="1" />
+      <File FileName="App.xaml.cs" Line="10" Column="15" />
+      <File FileName="AppShell.xaml" Line="45" Column="28" />
+      <File FileName="AppShell.xaml.cs" Line="7" Column="14" />
+      <File FileName="Platforms/Android/AndroidManifest.xml" />
+      <File FileName="Platforms/Android/MainActivity.cs" Line="1" Column="1" />
+      <File FileName="Platforms/Android/MainApplication.cs" Line="1" Column="1" />
+      <File FileName="MapUwosh.xaml" Line="17" Column="43" />
+      <File FileName="MapUwosh.xaml.cs" Line="16" Column="76" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="UWOsh_InteractiveMap" expanded="True">
             <Node name="UWOsh_InteractiveMap" expanded="True">
-              <Node name="Dependencies" expanded="True" />
+              <Node name="Dependencies" expanded="True">
+                <Node name="net7.0-android" expanded="True">
+                  <Node name="PackageDependencies" expanded="True" />
+                </Node>
+              </Node>
               <Node name="Platforms" expanded="True">
-                <Node name="MacCatalyst" expanded="True" />
+                <Node name="Android" expanded="True">
+                  <Node name="AndroidManifest.xml" selected="True" />
+                </Node>
               </Node>
-              <Node name="ListAllPlants.xaml" expanded="True">
-                <Node name="ListAllPlants.xaml.cs" selected="True" />
+              <Node name="Resources" expanded="True">
+                <Node name="Images" expanded="True" />
               </Node>
+              <Node name="App.xaml" expanded="True" />
+              <Node name="AppShell.xaml" expanded="True" />
+              <Node name="ListAllPlants.xaml" expanded="True" />
               <Node name="MainPage.xaml" expanded="True" />
+              <Node name="MapUwosh.xaml" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -35,9 +58,7 @@
   </MonoDevelop.Ide.Workbench>
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/Rudy/Desktop/UWOsh_InteractiveMap/Platforms/MacCatalyst/Program.cs" relfile="Platforms/MacCatalyst/Program.cs" line="10" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />

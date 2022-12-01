@@ -2,27 +2,17 @@
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
+     
 
         public MainPage()
         {
             InitializeComponent();
         }
 
- 
-
-        private void OnTextChanged(object sender, EventArgs e)
+        async void OnTextChanged(object sender, EventArgs e)
         {
-            SearchBar.Text = "Text Changed";
+            await Shell.Current.GoToAsync("ListAllPlants"); // on text changed it 
         }
-
-        private void FilterClicked(object sender, EventArgs e)
-        {
-            SearchBar.Text = "Text Changed";
-        }
-
-
-
 
     }
 }

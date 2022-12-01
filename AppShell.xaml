@@ -8,7 +8,7 @@
 
     <ShellContent
         Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
+        ContentTemplate="{DataTemplate local:MapUwosh}"
         Route="MainPage" />
 
 
@@ -38,8 +38,5 @@
         Title="Compass"
         ContentTemplate="{DataTemplate local:Compass}"
         Route="Compass" />
-
-
-
 
 </Shell>

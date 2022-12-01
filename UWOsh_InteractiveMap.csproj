@@ -86,6 +86,9 @@
 	  <MauiXaml Update="Compass.xaml">
 	    <SubType></SubType>
 	  </MauiXaml>
+	  <MauiXaml Update="MapUwosh.xaml">
+	    <SubType></SubType>
+	  </MauiXaml>
 	</ItemGroup>
 	<ItemGroup>
 	  <None Remove="Resources\Images\uwo_placeholder.jpg" />
