@@ -67,13 +67,8 @@ namespace UWOsh_InteractiveMap
         /// Retrieves all the entries
         /// </summary>
         /// <returns>all of the entries</returns>
-        public ObservableCollection<Plant> GetEntries()
+        public ObservableCollection<Plant> GetPlants()
         {
-            while (Plants.Count > 0)
-            {
-                Plants.RemoveAt(0);
-            }
-
             using var con = new NpgsqlConnection(connectionString);
             con.Open();
 
@@ -92,12 +87,10 @@ namespace UWOsh_InteractiveMap
                     Console.Write(reader.GetName(colNum) + "=" + reader[colNum] + " ");
                 }
                 Console.Write("\n");
-                Plants.Add(new Plant(reader[0] as String, reader[1] as String, reader[2] as String, reader[3] as String, reader[4] as String, (int)reader[5]));
+                Plants.Add(new Plant((long)reader[0], reader[1] as String, reader[2] as String, reader[3] as String, reader[4] as String, reader[5] as String));
             }
 
             con.Close();
-
-
 
             return Plants;
         }

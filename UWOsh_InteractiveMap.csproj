@@ -33,6 +33,9 @@
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-ios|AnyCPU'">
 	  <CreatePackage>false</CreatePackage>
 	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-ios|AnyCPU'">
+	  <CreatePackage>false</CreatePackage>
+	</PropertyGroup>
 	<ItemGroup>
 	  <MauiImage Remove="Resources\Images\uwo_placeholder.jpg" />
 	  <MauiImage Remove="Resources\Images\polystichum_munitum_jami_dwyer.jpg" />
@@ -63,6 +66,8 @@
 		<PackageReference Include="Syncfusion.Licensing" Version="20.3.0.58" />
 		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.0.0" />
 		<PackageReference Include="Npgsql" Version="7.0.0" />
+		<PackageReference Include="Microsoft.Maui.Controls.Maps" Version="7.0.49" />
+		<PackageReference Include="Microsoft.Maui.Graphics" Version="7.0.49" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -91,6 +96,8 @@
 	  <None Remove="Syncfusion.Licensing" />
 	  <None Remove="CommunityToolkit.Mvvm" />
 	  <None Remove="Npgsql" />
+	  <None Remove="Microsoft.Maui.Controls.Maps" />
+	  <None Remove="Microsoft.Maui.Graphics" />
 	</ItemGroup>
 	<ItemGroup>
 	  <BundleResource Include="Resources\Images\uwo_placeholder.jpg" />

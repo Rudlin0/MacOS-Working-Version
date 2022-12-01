@@ -78,10 +78,13 @@
               "target": "Package",
               "version": "[7.0.0, )"
             },
+            "Microsoft.Maui.Controls.Maps": {
+              "target": "Package",
+              "version": "[7.0.49, )"
+            },
             "Microsoft.Maui.Graphics": {
               "target": "Package",
-              "version": "[7.0.49, )",
-              "autoReferenced": true
+              "version": "[7.0.49, )"
             },
             "Npgsql": {
               "target": "Package",
@@ -216,10 +219,13 @@
               "target": "Package",
               "version": "[7.0.0, )"
             },
+            "Microsoft.Maui.Controls.Maps": {
+              "target": "Package",
+              "version": "[7.0.49, )"
+            },
             "Microsoft.Maui.Graphics": {
               "target": "Package",
-              "version": "[7.0.49, )",
-              "autoReferenced": true
+              "version": "[7.0.49, )"
             },
             "Npgsql": {
               "target": "Package",
@@ -299,10 +305,13 @@
               "target": "Package",
               "version": "[7.0.0, )"
             },
+            "Microsoft.Maui.Controls.Maps": {
+              "target": "Package",
+              "version": "[7.0.49, )"
+            },
             "Microsoft.Maui.Graphics": {
               "target": "Package",
-              "version": "[7.0.49, )",
-              "autoReferenced": true
+              "version": "[7.0.49, )"
             },
             "Npgsql": {
               "target": "Package",

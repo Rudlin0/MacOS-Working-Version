@@ -12,46 +12,40 @@ namespace UWOsh_InteractiveMap
         String description;
         String coordinates;
         String imageurl;
-        int id;
+        long id;
 
         public String PopularName
         {
             get { return popularname; }
-            set { SetProperty(ref popularname, value); }
         }
 
         public String ScientificName
         {
             get { return scientificname; }
-            set { SetProperty(ref scientificname, value); }
         }
 
         public String Description
         {
             get { return description; }
-            set { SetProperty(ref description, value); }
         }
 
         public String Coordinates
         {
             get { return coordinates;  }
-            set { SetProperty(ref coordinates, value); }
         }
 
         public String ImageUrl
         {
             get { return imageurl;  }
-            set { SetProperty(ref imageurl, value); }
         }
 
-        public int Id
+        public long Id
         {
             get { return id; }
-            set { SetProperty(ref id, value); }
         }
 
-        public Plant(String popularname, String scientificname, String description,
-                     String coordinates, String imageurl, int id)
+        public Plant(long id, String popularname, String scientificname, String description,
+                     String coordinates, String imageurl)
         {
             this.popularname = popularname;
             this.scientificname = scientificname;

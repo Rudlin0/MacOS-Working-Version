@@ -21,7 +21,9 @@
                BackgroundColor="White"
                VerticalOptions="Start"
                HorizontalOptions="Start"
-               TextColor="Black"/>
+               TextColor="Black"
+               TextChanged="OnFilterTextChanged"
+               x:Name="ListSearchBar"/>
 
             <Button Grid.Column="1"
                 x:Name="FilterBtn"
@@ -44,39 +46,13 @@
             TextColor="Black"
             FontSize="Title"/>
 
-        <ListView ItemsSource="{Binding Plants}" />
-
-        <Button
-                x:Name="SearchBtn1"
-                Text="Common Name (Genus Species)"
-                SemanticProperties.Hint="Sends you to this item's detail page"
-                Clicked="OnButtonClicked"
-                HorizontalOptions="Start"
-                VerticalOptions="Center"
-                FontSize="Large"
-                />
-
-        <Button
-                x:Name="SearchBtn2"
-                Text="Common Name (Genus Species)"
-                SemanticProperties.Hint="Sends you to this item's detail page"
-                Clicked="OnButtonClicked"
-                HorizontalOptions="Start"
-                VerticalOptions="Center"
-                FontSize="Large"
-                />
-
-        <Button
-                x:Name="SearchBtn3"
-                Text="Common Name (Genus Species)"
-                SemanticProperties.Hint="Sends you to this item's detail page"
-                Clicked="OnButtonClicked"
-                HorizontalOptions="Start"
-                VerticalOptions="Center"
-                FontSize="Large"
-                />
-
+        <ListView x:Name="ListOfAllPlants" ItemSelected="OnItemTapped">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding PopularName}"
+                              Detail="{Binding ScientificName}"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+         </ListView>
     </VerticalStackLayout>
-
-
 </ContentPage>
