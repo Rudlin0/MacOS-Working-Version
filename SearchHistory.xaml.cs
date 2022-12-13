@@ -16,7 +16,7 @@ public partial class SearchHistory : ContentPage
     }
     async void OnItemTapped(object sender, SelectedItemChangedEventArgs e)
     {
-        await Shell.Current.GoToAsync("DetailPage");
+        await Navigation.PushAsync(new DetailPage((Plant)e.SelectedItem));
     }
 
     private void OnButtonClicked(object sender, EventArgs e)

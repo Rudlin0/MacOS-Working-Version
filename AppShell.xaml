@@ -23,10 +23,10 @@
         ContentTemplate="{DataTemplate local:SearchHistory}"
         Route="SearchHistory" />
 
-    <ShellContent
+    <!--ShellContent
         Title="DetailPage"
         ContentTemplate="{DataTemplate local:DetailPage}"
-        Route="DetailPage" />
+        Route="DetailPage" /-->
 
     <ShellContent
         Title="Compass"

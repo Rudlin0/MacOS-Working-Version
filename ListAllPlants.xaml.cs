@@ -34,7 +34,8 @@ public partial class ListAllPlants : ContentPage
     async void OnItemTapped(object sender, SelectedItemChangedEventArgs e)
     {
         SearchHistoryCollection.Insert(0, (Plant) e.SelectedItem);
-        await Shell.Current.GoToAsync("DetailPage");
+        await Navigation.PushAsync(new DetailPage((Plant) e.SelectedItem));
+        //await Shell.Current.GoToAsync("DetailPage");
     }
         
     private void OnButtonClicked(object sender, EventArgs e)
