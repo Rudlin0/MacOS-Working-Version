@@ -26,18 +26,6 @@
                TextChanged="OnFilterTextChanged"
                x:Name="ListSearchBar"/>
 
-            <Button Grid.Column="1"
-                x:Name="FilterBtn"
-                Text="Filter"
-                SemanticProperties.Hint="Opens pop-up filter menu"
-                Clicked="OnButtonClicked"
-                HorizontalOptions="Center"
-                VerticalOptions="Start"
-                BorderColor="Black"
-                BorderWidth="4"
-                FontSize="Medium"
-                Scale="1"/>
-
         </Grid>
 
         <Label 

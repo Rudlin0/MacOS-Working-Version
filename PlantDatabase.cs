@@ -73,7 +73,7 @@ namespace UWOsh_InteractiveMap
             using var con = new NpgsqlConnection(connectionString);
             con.Open();
 
-            var sql = "SELECT * FROM \"plants\" limit 10;";
+            var sql = "SELECT * FROM \"plants\" limit 30;";
 
             using var cmd = new NpgsqlCommand(sql, con);
 
@@ -81,6 +81,7 @@ namespace UWOsh_InteractiveMap
 
             // Columns are popularname, scientificname, description, coordinates, imageurl, and id in that order ...
             // Show all data
+            Plants = new ObservableCollection<Plant>();
             while (reader.Read())
             {
                 for (int colNum = 0; colNum < reader.FieldCount; colNum++)

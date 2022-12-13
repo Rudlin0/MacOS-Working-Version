@@ -10,7 +10,7 @@ public partial class SearchHistory : ContentPage
         InitializeComponent();
 
         plantDatabase = new PlantDatabase();
-        UserSearchHistory.ItemsSource = plantDatabase.GetPlants();
+        UserSearchHistory.ItemsSource = ListAllPlants.SearchHistoryCollection;
         Routing.RegisterRoute(nameof(DetailPage), typeof(DetailPage));
 
     }
@@ -26,6 +26,7 @@ public partial class SearchHistory : ContentPage
 
     private void OnFilterTextChanged(object sender, TextChangedEventArgs e)
     {
-
+        UserSearchHistory.ItemsSource = ListAllPlants.SearchHistoryCollection.Where(
+                                        s => s.PopularName.StartsWith(e.NewTextValue));
     }
 }

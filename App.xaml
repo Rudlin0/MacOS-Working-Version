@@ -5,7 +5,7 @@
              x:Class="UWOsh_InteractiveMap.App">
     <!-- Resources and Styling worked on by John-->
     <!-- All project code review done by Rudy Liljeberg unless explicitly noted otherwise -->
-    <Application.Resources>
+    <Application.Resources> 
           <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
