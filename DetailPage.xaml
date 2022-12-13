@@ -10,17 +10,17 @@
             x:Name="DisplayTitle"
             VerticalOptions="Start" 
             HorizontalOptions="Center"
-            Style="{StaticResource HeadingStyle}"/>
+            FontSize="26"/>
 
         <Label
             Text="About:"
             HorizontalOptions="Start"
-            Style="{StaticResource SubHeadingStyle}"/>
+            FontSize="20"/>
         
         <Label
             x:Name="DisplayDescription"
             HorizontalOptions="Start"
-            Style="{StaticResource PlainTextStyle}"/>
+            FontSize="16"/>
 
         <Image 
             x:Name="ImagePath"

@@ -28,11 +28,6 @@
                 <Tab Title="ListAllPlantsTab" Icon="plantslist.svg">
                     <ShellContent ContentTemplate="{DataTemplate local:ListAllPlants}"/>
                 </Tab>
-
-                <!--Tab Title="DetailPage" Icon="detailpage.svg">
-                    <ShellContent ContentTemplate="{DataTemplate local:DetailPage}"/>
-                </Tab>
-                <-->
             </TabBar>
         </Shell>
     </Application.MainPage>

@@ -3,14 +3,15 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:maps="clr-namespace:Microsoft.Maui.Controls.Maps;assembly=Microsoft.Maui.Controls.Maps"
              xmlns:loc="clr-namespace:Microsoft.Maui.Devices.Sensors;assembly=Microsoft.Maui.Essentials"
-             x:Class="UWOsh_InteractiveMap.MainPage">
+    x:Class="UWOsh_InteractiveMap.MainPage">
 
-<!--Code authored by Shabbar Kazmi -->
-<Grid>
+    <!--Code authored by Shabbar Kazmi -->
+    <Grid>
 
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
-            <RowDefinition Height="13*" /> <!--second row is 13* but that is subject to change-->
+            <RowDefinition Height="13*" />
+            <!--second row is 13* but that is subject to change-->
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
@@ -53,5 +54,4 @@
                    />
 
     </Grid>
-    </ContentPage>
-
+</ContentPage>

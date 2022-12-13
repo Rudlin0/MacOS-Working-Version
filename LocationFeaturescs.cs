@@ -4,13 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+/*
+Author: Shabbar Kazmi
+Reviewer: Benjamin Wastart
+*/
 namespace UWOsh_InteractiveMap
 {
-     class LocationFeaturescs
+    class LocationFeaturescs
     {
-
         IGeolocation geolocation;
         IGeocoding geocoding;
+        public Location myLocation = new Location();
 
         // gets last known cache location;
         public async Task<string> GetCachedLocation()
@@ -61,7 +65,11 @@ namespace UWOsh_InteractiveMap
                 Location location = await Geolocation.Default.GetLocationAsync(request, _cancelTokenSource.Token);
 
                 if (location != null)
-                    Console.WriteLine($"Latitude: {location.Latitude}, Longitude: {location.Longitude}, Altitude: {location.Altitude}");
+                {
+                    myLocation.Latitude = location.Latitude;
+                    myLocation.Longitude = location.Longitude;
+                }
+
             }
             // Catch one of the following exceptions:
             //   FeatureNotSupportedException
@@ -76,17 +84,11 @@ namespace UWOsh_InteractiveMap
                 _isCheckingLocation = false;
             }
         }
-
         // you can cancel location request. 
         public void CancelRequest()
         {
             if (_isCheckingLocation && _cancelTokenSource != null && _cancelTokenSource.IsCancellationRequested == false)
                 _cancelTokenSource.Cancel();
         }
-
-
-
-
-
     }
 }

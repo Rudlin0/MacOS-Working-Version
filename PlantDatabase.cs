@@ -28,6 +28,7 @@ namespace UWOsh_InteractiveMap
         /// A local version of the database
         /// </summary>
         public ObservableCollection<Plant> Plants = new ObservableCollection<Plant>();
+        public ObservableCollection<Plant> PlantList;
 
         JsonSerializerOptions options;
 
@@ -64,6 +65,14 @@ namespace UWOsh_InteractiveMap
             return null;
         }
 
+        Location compassLoc;
+
+        public Location selectedLocation
+        {
+            get { return compassLoc; }
+            set { compassLoc = value; }
+        }
+
         /// <summary>
         /// Retrieves all the entries
         /// </summary>
@@ -95,6 +104,45 @@ namespace UWOsh_InteractiveMap
             con.Close();
 
             return Plants;
+        }
+
+        public ObservableCollection<Plant> GetPlantsOrderedByLoc()
+        {
+
+            PlantList = new ObservableCollection<Plant>();
+
+            while (PlantList.Count > 0)
+            {
+                PlantList.RemoveAt(0);
+            }
+
+            using var con = new NpgsqlConnection(connectionString);
+            con.Open();
+
+            var sql = "SELECT * FROM \"plants\" ORDER BY coordinates ;";
+
+            using var cmd = new NpgsqlCommand(sql, con);
+
+            using NpgsqlDataReader reader = cmd.ExecuteReader();
+
+            // Columns are id, common name, scientific name, description, coordinates, image url in that order ...
+            // Show all data
+            while (reader.Read())
+            {
+                for (int colNum = 0; colNum < reader.FieldCount; colNum++)
+                {
+                    Console.Write(reader.GetName(colNum) + "=" + reader[colNum] + " ");
+                }
+                Console.Write("\n");
+                PlantList.Add(new Plant((long)reader[0], reader[1] as String, reader[2] as String, reader[3] as String, reader[4] as String, reader[5] as String));
+            }
+
+            con.Close();
+
+
+
+
+            return PlantList;
         }
 
         /// <summary>

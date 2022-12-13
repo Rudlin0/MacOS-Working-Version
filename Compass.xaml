@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<!--Author: Benjamin Wastart-->
-<!--Reviewer: -->
+   <!-- Author: Benjamin Wastart -->
+    <!-- Reviewer: Rudy Liljeberg -->
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="UWOsh_InteractiveMap.Compass"
              Title="Compass" xmlns:gauge="clr-namespace:Syncfusion.Maui.Gauges;assembly=Syncfusion.Maui.Gauges"
-             BackgroundColor="{DynamicResource SecondaryColor}">
-
+             BackgroundColor="GhostWhite">
+   
     <gauge:SfRadialGauge x:Name="compassGauge">
         <gauge:SfRadialGauge.Axes>
             <gauge:RadialAxis ShowAxisLine="False"
@@ -28,77 +28,36 @@
                 </gauge:RadialAxis.MajorTickStyle>
                 <gauge:RadialAxis.MinorTickStyle>
                     <gauge:RadialTickStyle LengthUnit="Factor"
+                                           StrokeThickness="2"
                                            Length="0.12" />
                 </gauge:RadialAxis.MinorTickStyle>
                 <gauge:RadialAxis.Pointers>
-                    <gauge:ShapePointer Value="90"
-                                        ShapeType="Triangle" />
                     <gauge:NeedlePointer Value="310"
                                          NeedleLengthUnit="Factor"
                                          NeedleLength="0.9"
                                          NeedleStartWidth="1"
                                          NeedleEndWidth="1"
-                                         NeedleFill="#FFC4C4C4"
+                                         NeedleFill="#16192c"
                                          KnobRadius="0"
                                          TailLengthUnit="Factor"
                                          TailLength="0.9"
                                          TailWidth="1"
-                                         TailFill="#FFC4C4C4">
+                                         TailFill="#16192c">
                     </gauge:NeedlePointer>
                     <gauge:NeedlePointer Value="221"
                                          NeedleLengthUnit="Factor"
                                          NeedleLength="0.9"
                                          NeedleStartWidth="1"
                                          NeedleEndWidth="1"
-                                         NeedleFill="#FFC4C4C4"
+                                         NeedleFill="#16192c"
                                          KnobRadius="0"
                                          TailLengthUnit="Factor"
                                          TailLength="0.9"
                                          TailWidth="1"
-                                         TailFill="#FFC4C4C4">
+                                         TailFill="#16192c">
                     </gauge:NeedlePointer>
                 </gauge:RadialAxis.Pointers>
-
-                <gauge:RadialAxis.Annotations>
-                    <gauge:GaugeAnnotation DirectionValue="230"
-                                           PositionFactor="0.5">
-                        <gauge:GaugeAnnotation.Content>
-                            <Label Text="W"
-                                   FontAttributes="Bold"
-                                   FontSize="18"
-                                   TextColor="Black" />
-                        </gauge:GaugeAnnotation.Content>
-                    </gauge:GaugeAnnotation>
-                    <gauge:GaugeAnnotation DirectionValue="310"
-                                                               PositionFactor="0.5">
-                        <gauge:GaugeAnnotation.Content>
-                            <Label Text="N"
-                                                       FontAttributes="Bold"
-                                                       FontSize="18"
-                                                       TextColor="Black" />
-                        </gauge:GaugeAnnotation.Content>
-                    </gauge:GaugeAnnotation>
-                    <gauge:GaugeAnnotation DirectionValue="129"
-                                                               PositionFactor="0.5">
-                        <gauge:GaugeAnnotation.Content>
-                            <Label Text="S"
-                                                       FontAttributes="Bold"
-                                                       FontSize="18"
-                                                       TextColor="Black" />
-                        </gauge:GaugeAnnotation.Content>
-                    </gauge:GaugeAnnotation>
-                    <gauge:GaugeAnnotation DirectionValue="50"
-                                                               PositionFactor="0.5">
-                        <gauge:GaugeAnnotation.Content>
-                            <Label Text="E"
-                                                       FontAttributes="Bold"
-                                                       FontSize="18"
-                                                       TextColor="Black" />
-                        </gauge:GaugeAnnotation.Content>
-                    </gauge:GaugeAnnotation>
-                </gauge:RadialAxis.Annotations>
             </gauge:RadialAxis>
         </gauge:SfRadialGauge.Axes>
     </gauge:SfRadialGauge>
-
 </ContentPage>
