@@ -14,7 +14,7 @@ namespace UWOsh_InteractiveMap
     {
         IGeolocation geolocation;
         IGeocoding geocoding;
-        public Location myLocation = new Location();
+        public Location myLocation = new Location(); //The current location
 
         // gets last known cache location;
         public async Task<string> GetCachedLocation()
@@ -67,7 +67,7 @@ namespace UWOsh_InteractiveMap
                 if (location != null)
                 {
                     myLocation.Latitude = location.Latitude;
-                    myLocation.Longitude = location.Longitude;
+                    myLocation.Longitude = location.Longitude; //update current location
                 }
 
             }
