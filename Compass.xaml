@@ -6,9 +6,10 @@
              x:Class="UWOsh_InteractiveMap.Compass"
              Title="Compass" xmlns:gauge="clr-namespace:Syncfusion.Maui.Gauges;assembly=Syncfusion.Maui.Gauges"
              BackgroundColor="GhostWhite">
-   
+   <!--Creates container for compass -->
     <gauge:SfRadialGauge x:Name="compassGauge">
         <gauge:SfRadialGauge.Axes>
+           <!-- Creates the outside circle -->
             <gauge:RadialAxis ShowAxisLine="False"
                               TickPosition="Outside"
                               LabelPosition="Outside"
@@ -21,6 +22,7 @@
                               ShowLastLabel="False"
                               Interval="30"
                               OffsetUnit="Factor">
+               <!--Modifys the ticks around the circle -->
                 <gauge:RadialAxis.MajorTickStyle>
                     <gauge:RadialTickStyle LengthUnit="Factor"
                                            StrokeThickness="2"
@@ -32,6 +34,7 @@
                                            Length="0.12" />
                 </gauge:RadialAxis.MinorTickStyle>
                 <gauge:RadialAxis.Pointers>
+                   <!--Creates the dividing lines -->
                     <gauge:NeedlePointer Value="310"
                                          NeedleLengthUnit="Factor"
                                          NeedleLength="0.9"
