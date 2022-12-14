@@ -12,23 +12,23 @@ Reviewer: Rudy Liljeberg
 public partial class Compass : ContentPage
 {
     private Location NORTH = new Location(81.3, 110.8); //Magnetic North
-    private ShapePointer pointer = new ShapePointer();
+    private ShapePointer pointer = new ShapePointer(); //Arrow for pointing where to go
     private RadialAxis radialAxis = new RadialAxis();
-    private Location myLocation = new Location();
+    private Location myLocation = new Location(); //Your location
     private LocationFeaturescs featurescs = new LocationFeaturescs();
     private Location pointb; //The third point in the triangle
-    private System.Timers.Timer aTimer;
-    private Location location;
+    private System.Timers.Timer aTimer; //Timer to make compass ask for location without a while loop
+    private Location destination;
 
     public Compass()
     {
         InitializeComponent();
 
-        SetCompass();
-        SetPointer();
-        location = NORTH;
-        SetGuide(NORTH);
-        SetTimer();
+        SetCompass(); //Setting up the Compass
+        SetPointer(); //Set up arrow
+        destination = NORTH; //set destination point
+        SetGuide(NORTH); //set arrow to point to north
+        SetTimer();    //set up timer
         aTimer.Stop();
         aTimer.Dispose();
 
@@ -37,39 +37,39 @@ public partial class Compass : ContentPage
     public Compass(Location plant)
     {
         InitializeComponent();
-        location = plant;
-        SetCompass();
-        SetPointer();
-        SetGuide(plant);
-        SetTimer();
+        destination = plant; //set destination point
+        SetCompass(); //Setting up the Compass
+        SetPointer();  //Set up arrow
+        SetGuide(plant); //set arrow to point to plant
+        SetTimer();     //set up timer
         aTimer.Stop();
         aTimer.Dispose();
     }
-
+    //Basic function to set arrow to point to north
     public void SetGuide()
     {
         SetGuide(NORTH);
 
     }
-
+    //Set arrow to point to plant
     public void SetGuide(Location plant)
     {
-        myLocation = featurescs.myLocation;
-        compassGauge.Axes.Add(radialAxis);
+        myLocation = featurescs.myLocation; //Get your location
+        compassGauge.Axes.Add(radialAxis); //Add circle to compass
 
 
-        double sidec = Location.CalculateDistance(myLocation, plant, DistanceUnits.Miles);
-        pointb = new Location(myLocation.Latitude, plant.Longitude);
+        double sidec = Location.CalculateDistance(myLocation, plant, DistanceUnits.Miles); //getting distance from you to plant
+        pointb = new Location(myLocation.Latitude, plant.Longitude);  //getting third point to make a triangle
 
-        double sideb = Location.CalculateDistance(pointb, plant, DistanceUnits.Miles);
+        double sideb = Location.CalculateDistance(pointb, plant, DistanceUnits.Miles);  //getting distance between third point and plant
 
-        double sidea = Location.CalculateDistance(myLocation, pointb, DistanceUnits.Miles);
-
-        pointer.Value = (320 + (Math.Acos(((sidea * sidea + sidec * sidec - sideb * sideb) / (2 * sidea * sidec)))) * 180 / Math.PI) % 360;
+        double sidea = Location.CalculateDistance(myLocation, pointb, DistanceUnits.Miles); //getting distance between yourself and third point
+        //get where arrow points
+        pointer.Value = (320 + (Math.Acos(((sidea * sidea + sidec * sidec - sideb * sideb) / (2 * sidea * sidec)))) * 180 / Math.PI) % 360; 
 
         radialAxis.Pointers.Add(pointer);
     }
-
+    //Create circle for compass
     private void SetCompass()
     {
         radialAxis.Pointers.Clear();
@@ -86,7 +86,7 @@ public partial class Compass : ContentPage
         radialAxis.Interval = 0;
         radialAxis.OffsetUnit = SizeUnit.Factor;
     }
-
+    //Set up size of arrow
     private void SetPointer()
     {
         pointer.ShapeHeight = 40;
@@ -96,7 +96,7 @@ public partial class Compass : ContentPage
         pointer.Fill = Color.Parse("Blue");
         pointer.Offset = 18;
     }
-
+    //sets up timer
     private void SetTimer()
     {
         // Create a timer with a two second interval.
@@ -109,7 +109,7 @@ public partial class Compass : ContentPage
 
     private void OnTimedEvent(Object source, ElapsedEventArgs e)
     {
-        SetGuide(location);
+        SetGuide(destination);
     }
 }
 
