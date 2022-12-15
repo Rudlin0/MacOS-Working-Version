@@ -4,7 +4,7 @@
              xmlns:local="clr-namespace:UWOsh_InteractiveMap"
              x:Class="UWOsh_InteractiveMap.App">
     <!-- Resources and Styling worked on by John-->
-    <!-- All project code review done by Rudy Liljeberg unless explicitly noted otherwise -->
+    <!-- Reviewer: Rudy Liljeberg-->
     <Application.Resources> 
           <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
@@ -13,24 +13,5 @@
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
-
-        <Application.MainPage>
-        <Shell>
-            <TabBar x:Name="AppTabs">
-                
-                <Tab Title="MapTab" Icon="mapicon.svg">
-                    <ShellContent ContentTemplate="{DataTemplate local:MapUwosh}"/>
-                </Tab>
-                <Tab Title="CompassTab" Icon="compassicon.svg">
-                    <ShellContent ContentTemplate="{DataTemplate local:Compass}"/>
-                </Tab>
-
-                <Tab Title="ListAllPlantsTab" Icon="plantslist.svg">
-                    <ShellContent ContentTemplate="{DataTemplate local:ListAllPlants}"/>
-                </Tab>
-            </TabBar>
-        </Shell>
-    </Application.MainPage>
-
-      
+        
 </Application>

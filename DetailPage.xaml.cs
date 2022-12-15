@@ -5,6 +5,8 @@ namespace UWOsh_InteractiveMap;
 
 public partial class DetailPage : ContentPage
 {
+    //Written by John Hudson
+    //Reviewed by Rudy Liljeberg
     public DetailPage(Plant detailPlant)
     {
         InitializeComponent();

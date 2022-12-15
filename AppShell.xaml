@@ -4,28 +4,25 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:UWOsh_InteractiveMap"
-    Shell.FlyoutBehavior="Flyout">
+    >
+       
+ <!--Code by Shabbar Kazmi -->
+ <!--Reviewed by Rudy Liljeberg -->
+    <TabBar>
+    <Tab Title="MapTab" Icon="mapicon.svg">
+            <ShellContent ContentTemplate="{DataTemplate local:MapUwosh}"/>
+        </Tab>
+        
+        <Tab Title="CompassTab" Icon="compassicon.svg">
+            <ShellContent ContentTemplate="{DataTemplate local:Compass}"/>
+        </Tab>
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MapUwosh}"
-        Route="MainPage" />
+        <Tab Title="ListAllPlantsTab" Icon="plantslist.svg">
+            <ShellContent ContentTemplate="{DataTemplate local:ListAllPlants}"/>
+        </Tab>
 
-
-    <ShellContent
-        Title="ListAllPlants"
-        ContentTemplate="{DataTemplate local:ListAllPlants}"
-        Route="ListAllPlants" />
-
-
-    <ShellContent
-        Title="SearchHistory"
-        ContentTemplate="{DataTemplate local:SearchHistory}"
-        Route="SearchHistory" />
-
-    <ShellContent
-        Title="Compass"
-        ContentTemplate="{DataTemplate local:Compass}"
-        Route="Compass" />
-
+        <Tab Title="SearchHistory" Icon="plantslist.svg">
+            <ShellContent ContentTemplate="{DataTemplate local:SearchHistory}"/>
+        </Tab>
+    </TabBar>
 </Shell>

@@ -8,7 +8,9 @@ namespace UWOsh_InteractiveMap
     // Reviewed by Shabbar Kazmi
     public interface IDatabase : INotifyPropertyChanged
     {
-        Plant FindEntry(int id);
+  
         ObservableCollection<Plant> GetPlants();
+        ObservableCollection<ObservableCollection<Plant>> GetPlantFromLocation(List<String> plantLocs);
+        List<String> GetPlantsLoc();
     }
 }

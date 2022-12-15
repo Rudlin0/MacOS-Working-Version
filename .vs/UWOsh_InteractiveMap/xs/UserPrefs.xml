@@ -1,40 +1,37 @@
 ﻿<Properties StartupConfiguration="{B0C046DB-23CB-411B-8A40-3C3CAD6C6DF6}|Default" GitUserInfo="UsingGIT">
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="AppShell.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="App.xaml.cs">
     <Files>
-      <File FileName="MainPage.xaml.cs" Line="18" Column="2" />
-      <File FileName="ListAllPlants.xaml" Line="36" Column="31" />
-      <File FileName="IDatabase.cs" />
-      <File FileName="ListAllPlants.xaml.cs" Line="25" Column="6" />
-      <File FileName="MainPage.xaml" Line="40" Column="47" />
-      <File FileName="LocationFeaturescs.cs" />
+      <File FileName="MainPage.xaml.cs" Line="21" Column="22" />
+      <File FileName="ListAllPlants.xaml" Line="1" Column="1" />
+      <File FileName="IDatabase.cs" Line="1" Column="1" />
+      <File FileName="ListAllPlants.xaml.cs" />
+      <File FileName="MainPage.xaml" Line="12" Column="18" />
+      <File FileName="LocationFeaturescs.cs" Line="16" Column="30" />
       <File FileName="Platforms/MacCatalyst/Program.cs" />
-      <File FileName="PlantDatabase.cs" Line="84" Column="56" />
-      <File FileName="Plant.cs" />
-      <File FileName="DetailPage.xaml" Line="11" Column="17" />
+      <File FileName="PlantDatabase.cs" />
+      <File FileName="Plant.cs" Line="73" Column="2" />
+      <File FileName="DetailPage.xaml" />
       <File FileName="Platforms/MacCatalyst/AppDelegate.cs" />
       <File FileName="Platforms/MacCatalyst/Info.plist" />
-      <File FileName="App.xaml" Line="35" Column="21" />
-      <File FileName="MauiProgram.cs" Line="1" Column="1" />
-      <File FileName="NavBar.xaml" Line="1" Column="1" />
+      <File FileName="App.xaml" Line="30" Column="23" />
+      <File FileName="MauiProgram.cs" />
+      <File FileName="NavBar.xaml" />
       <File FileName="App.xaml.cs" Line="10" Column="13" />
-      <File FileName="AppShell.xaml" Line="9" Column="18" />
+      <File FileName="AppShell.xaml" Line="12" Column="25" />
       <File FileName="AppShell.xaml.cs" Line="1" Column="1" />
       <File FileName="Platforms/Android/AndroidManifest.xml" />
       <File FileName="Platforms/Android/MainActivity.cs" />
       <File FileName="Platforms/Android/MainApplication.cs" />
-      <File FileName="MapUwosh.xaml" Line="32" Column="9" />
-      <File FileName="MapUwosh.xaml.cs" Line="1" Column="1" />
-      <File FileName="SearchHistory.xaml" Line="29" Column="40" />
-      <File FileName="SearchHistory.xaml.cs" Line="12" Column="19" />
+      <File FileName="MapUwosh.xaml" Line="6" Column="43" />
+      <File FileName="MapUwosh.xaml.cs" Line="61" Column="48" />
+      <File FileName="SearchHistory.xaml" />
+      <File FileName="SearchHistory.xaml.cs" />
       <File FileName="Compass.xaml.cs" />
-      <File FileName="Compass.xaml" Line="1" Column="1" />
+      <File FileName="Compass.xaml" />
       <File FileName="NavBar.xaml.cs" />
-      <File FileName="Platforms/iOS/Program.cs" Line="13" Column="1" />
-      <File FileName="DetailPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="Platforms/iOS/Program.cs" />
+      <File FileName="DetailPage.xaml.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -50,8 +47,10 @@
               <Node name="Resources" expanded="True">
                 <Node name="Images" expanded="True" />
               </Node>
-              <Node name="App.xaml" expanded="True" />
-              <Node name="AppShell.xaml" expanded="True" selected="True" />
+              <Node name="App.xaml" expanded="True">
+                <Node name="App.xaml.cs" selected="True" />
+              </Node>
+              <Node name="AppShell.xaml" expanded="True" />
               <Node name="Compass.xaml" expanded="True" />
               <Node name="DetailPage.xaml" expanded="True" />
               <Node name="ListAllPlants.xaml" expanded="True" />
@@ -65,8 +64,11 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.03CE7902-CB2C-4AD9-961B-F0DCC5AC1795" />
   <MonoDevelop.Ide.ItemProperties.UWOsh__InteractiveMap PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.03CE7902-CB2C-4AD9-961B-F0DCC5AC1795" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.03CE7902-CB2C-4AD9-961B-F0DCC5AC1795" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

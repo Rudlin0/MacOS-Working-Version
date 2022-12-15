@@ -74,9 +74,6 @@
 	  <MauiXaml Update="SearchHistory.xaml">
 	    <SubType></SubType>
 	  </MauiXaml>
-	  <MauiXaml Update="NavBar.xaml">
-	    <SubType></SubType>
-	  </MauiXaml>
 	  <MauiXaml Update="ListAllPlants.xaml">
 	    <SubType></SubType>
 	  </MauiXaml>

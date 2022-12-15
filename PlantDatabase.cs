@@ -11,7 +11,7 @@ using System.Runtime.CompilerServices;
 // https://www.dotnetperls.com/serialize-list
 // https://www.daveoncsharp.com/2009/07/xml-serialization-of-collections/
 
-// Written by Rudy Liljeberg
+// Written by Rudy Liljeberg and Shabbar Kazmi 
 // Reviewed by Shabbar Kazmi
 namespace UWOsh_InteractiveMap
 {
@@ -22,22 +22,16 @@ namespace UWOsh_InteractiveMap
     public class PlantDatabase : IDatabase
     {
 
-
-        String connectionString;
-        /// <summary>
-        /// A local version of the database
-        /// </summary>
-        public ObservableCollection<Plant> Plants = new ObservableCollection<Plant>();
-        public ObservableCollection<Plant> PlantList;
-
-        JsonSerializerOptions options;
-
         public event PropertyChangedEventHandler PropertyChanged;
-
         void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
+
+
+        String connectionString;
+
+        JsonSerializerOptions options;
 
         /// <summary>
         /// Here or thereabouts initialize a connectionString that will be used in all the SQL calls
@@ -47,22 +41,17 @@ namespace UWOsh_InteractiveMap
             connectionString = InitializeConnectionString();
         }
 
-
-        /// <summary>
-        /// Finds a specific entry
-        /// </summary>
-        /// <param name="id">id to find</param>
-        /// <returns>the Entry (if available)</returns>
-        public Plant FindEntry(int id)
+        event PropertyChangedEventHandler INotifyPropertyChanged.PropertyChanged
         {
-            foreach (Plant entry in Plants)
+            add
             {
-                if (entry.Id == id)
-                {
-                    return entry;
-                }
+                throw new NotImplementedException();
             }
-            return null;
+
+            remove
+            {
+                throw new NotImplementedException();
+            }
         }
 
         Location compassLoc;
@@ -79,6 +68,9 @@ namespace UWOsh_InteractiveMap
         /// <returns>all of the entries</returns>
         public ObservableCollection<Plant> GetPlants()
         {
+
+            ObservableCollection<Plant> plants;
+
             using var con = new NpgsqlConnection(connectionString);
             con.Open();
 
@@ -90,7 +82,7 @@ namespace UWOsh_InteractiveMap
 
             // Columns are popularname, scientificname, description, coordinates, imageurl, and id in that order ...
             // Show all data
-            Plants = new ObservableCollection<Plant>();
+            plants = new ObservableCollection<Plant>();
             while (reader.Read())
             {
                 for (int colNum = 0; colNum < reader.FieldCount; colNum++)
@@ -98,52 +90,84 @@ namespace UWOsh_InteractiveMap
                     Console.Write(reader.GetName(colNum) + "=" + reader[colNum] + " ");
                 }
                 Console.Write("\n");
-                Plants.Add(new Plant((long)reader[0], reader[1] as String, reader[2] as String, reader[3] as String, reader[4] as String, reader[5] as String));
+                plants.Add(new Plant((long)reader[0], reader[1] as String, reader[2] as String, reader[3] as String, reader[4] as String, reader[5] as String));
             }
 
             con.Close();
 
-            return Plants;
+            return plants;
         }
 
-        public ObservableCollection<Plant> GetPlantsOrderedByLoc()
+        /**
+         * returns a list of List<String> of unique plant locations 
+         * 
+         */
+        public List <String> GetPlantsLoc()
         {
 
-            PlantList = new ObservableCollection<Plant>();
-
-            while (PlantList.Count > 0)
-            {
-                PlantList.RemoveAt(0);
-            }
+            var plantsbyLoc = new List <String>();
 
             using var con = new NpgsqlConnection(connectionString);
             con.Open();
 
-            var sql = "SELECT * FROM \"plants\" ORDER BY coordinates ;";
-
+            var sql = "SELECT DISTINCT COORDINATES FROM \"plants\";";
             using var cmd = new NpgsqlCommand(sql, con);
-
             using NpgsqlDataReader reader = cmd.ExecuteReader();
 
             // Columns are id, common name, scientific name, description, coordinates, image url in that order ...
             // Show all data
             while (reader.Read())
             {
-                for (int colNum = 0; colNum < reader.FieldCount; colNum++)
+                plantsbyLoc.Add(reader[0] as String);               
+            }
+            con.Close();
+
+            return plantsbyLoc;
+
+        }
+
+        /**
+         * Retrieves entries according to input locations
+         * <input> List <String>
+         * <return></return> an ObservableCollection<ObservableCollection<Plant>> 
+         * 
+         */
+
+        public ObservableCollection<ObservableCollection<Plant>> GetPlantFromLocation(List <String> plantLocs)
+        {
+           
+            ObservableCollection<ObservableCollection<Plant>> plantAtLocList =
+                new ObservableCollection<ObservableCollection<Plant>>();
+
+            String plantCoordinates = plantLocs[0];
+
+            using var con = new NpgsqlConnection(connectionString);
+            con.Open();
+
+            for (int i = 0; i < plantLocs.Count; i++)
+            {
+                ObservableCollection<Plant> plantByLoc = new ObservableCollection<Plant>();
+                plantCoordinates = plantLocs[i] as String;
+
+                String sql = $"SELECT * FROM \"plants\" WHERE COORDINATES = \'{plantCoordinates}\' ;";
+                using var cmd = new NpgsqlCommand(sql, con);
+                using NpgsqlDataReader reader = cmd.ExecuteReader();
+
+                // Columns are id, common name, scientific name, description, coordinates, image url in that order ...
+                // Show all data
+                while (reader.Read())
                 {
-                    Console.Write(reader.GetName(colNum) + "=" + reader[colNum] + " ");
+                    plantByLoc.Add(new Plant((long)reader[0], reader[1] as String, reader[2] as String, reader[3] as String, reader[4] as String, reader[5] as String));
                 }
-                Console.Write("\n");
-                PlantList.Add(new Plant((long)reader[0], reader[1] as String, reader[2] as String, reader[3] as String, reader[4] as String, reader[5] as String));
+
+                plantAtLocList.Add(plantByLoc);
+
             }
 
             con.Close();
+            return plantAtLocList;
 
-
-
-
-            return PlantList;
-        }
+             }
 
         /// <summary>
         /// Creates the connection string to be utilized throughout the program
@@ -159,5 +183,6 @@ namespace UWOsh_InteractiveMap
 
             return connectionString = $"Host={bitHost};Username={bitUser};Password={bitApiKey};Database={bitDbName}";
         }
+
     }
 }

@@ -69,7 +69,5 @@ namespace UWOsh_InteractiveMap
             location = new Location(Double.Parse(longlat[0]),Double.Parse(longlat[1]));
 
         }
-
     }
 }
-

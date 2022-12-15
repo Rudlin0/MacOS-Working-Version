@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>UWOsh_InteractiveMap</name>
+    </assembly>
+    <members>
+        <member name="T:UWOsh_InteractiveMap.PlantDatabase">
+            <summary>
+            This is the database class
+            </summary>
+        </member>
+        <member name="M:UWOsh_InteractiveMap.PlantDatabase.#ctor">
+            <summary>
+            Here or thereabouts initialize a connectionString that will be used in all the SQL calls
+            </summary>
+        </member>
+        <member name="M:UWOsh_InteractiveMap.PlantDatabase.GetPlants">
+            <summary>
+            Retrieves all the entries
+            </summary>
+            <returns>all of the entries</returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:UWOsh_InteractiveMap.PlantDatabase.GetPlantsLoc" -->
+        <!-- Badly formed XML comment ignored for member "M:UWOsh_InteractiveMap.PlantDatabase.GetPlantFromLocation(System.Collections.Generic.List{System.String})" -->
+        <member name="M:UWOsh_InteractiveMap.PlantDatabase.InitializeConnectionString">
+            <summary>
+            Creates the connection string to be utilized throughout the program
+            
+            </summary>
+        </member>
+    </members>
+</doc>

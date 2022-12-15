@@ -6,11 +6,12 @@
              x:Class="UWOsh_InteractiveMap.MapUwosh"
              Title="MapUwosh">
     <!--Code authored by Shabbar Kazmi -->
+    <!--Reviewed by Rudy Liljeberg-->
 <Grid>
 
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
-            <RowDefinition Height="13*" /> <!--second row is 13* but that is subject to change-->
+            <RowDefinition Height="20*" /> <!--second row is 13* but that is subject to change-->
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
@@ -45,12 +46,13 @@
         </maps:Map>
 
         <!-- Search bar which appears on top of the map-->
-        <SearchBar x:Name="Searchbar" 
+
+         <SearchBar x:Name="Searchbar" 
                    Grid.Row="0"
                    Grid.ColumnSpan="2"
                    TextChanged="OnTextChanged"
                    BackgroundColor="Transparent"
-                   />
+                   />  
 
     </Grid>
     </ContentPage>

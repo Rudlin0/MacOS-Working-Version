@@ -1,6 +1,8 @@
 ﻿using Syncfusion.Maui.Core.Hosting;
 namespace UWOsh_InteractiveMap
 {
+    // Written by Shabbar Kazmi and Benjamin Wastart
+    // Reviewed by Rudy Liljeberg
     public static class MauiProgram
     {
         public static MauiApp CreateMauiApp()
